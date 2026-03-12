@@ -7,18 +7,66 @@ provider:
   region: ap-south-1
   stage: dev
 
+iam:
+  role:
+    statements:
+      - Effect: Allow
+        Action:
+          - secretsmanager:GetSecretValue
+        Resource: "*"
+
   environment:
     MONGO_URI: ${env:MONGO_URI}
 
 functions:
-
   testDB:
-    handler: src/handlers/testHandler.testDB
+    handler: source/handler/testHandler.testDB
     events:
       - httpApi:
           path: /test-db
           method: GET
-          
+
+  generateToken:
+    handler: source/handler/authHandler.createToken
+    events:
+    - httpApi:
+          path: /generatetoken
+          method: GET        
+
+  addUser:
+    handler: source/handler/userHander.addUser
+    events:
+      - httpApi:
+          path: /addusers
+          method: POST
+
+  getUserByUserId:
+    handler: source/handler/userHander.getUser
+    events:
+      - httpApi:
+          path: /getusersbyuserid/{user_id}
+          method: GET
+
+  getUserByMobileNumber:
+    handler: source/handler/userHander.getUser
+    events:
+      - httpApi:
+          path: /getusersbymobilenumber/{mobile_number}
+          method: GET
+
+  updateUserByUserId:
+    handler: source/handler/userHander.updateUser
+    events:
+      - httpApi:
+          path: /updateusersbyuserid
+          method: PUT
+
+  deleteUserByUserId:
+    handler: source/handler/userHander.deleteUser
+    events:
+      - httpApi:
+          path: /deleteusersbyuserid
+          method: POST
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline

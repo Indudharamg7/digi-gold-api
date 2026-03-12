@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^7.1.0"
+    "@aws-sdk/client-secrets-manager": "^3.967.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.1.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "serverless-dotenv-plugin": "^6.0.0",
-    "serverless-offline": "^14.5.0"
+    "serverless-offline": "^12.0.4"
   }
 }
