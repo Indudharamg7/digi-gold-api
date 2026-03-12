@@ -1,19 +1,21 @@
 service: digi-gold-api
 frameworkVersion: "3"
 useDotenv: true
+
 provider:
   name: aws
   runtime: nodejs18.x
   region: ap-south-1
   stage: dev
 
-iam:
-  role:
-    statements:
-      - Effect: Allow
-        Action:
-          - secretsmanager:GetSecretValue
-        Resource: "*"
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - secretsmanager:GetSecretValue
+          Resource:
+            - arn:aws:secretsmanager:ap-south-1:053141520455:secret:digi_gold_secret_keys*
 
   environment:
     MONGO_URI: ${env:MONGO_URI}
@@ -29,9 +31,9 @@ functions:
   generateToken:
     handler: source/handler/authHandler.createToken
     events:
-    - httpApi:
+      - httpApi:
           path: /generatetoken
-          method: GET        
+          method: GET
 
   addUser:
     handler: source/handler/userHander.addUser
@@ -67,6 +69,7 @@ functions:
       - httpApi:
           path: /deleteusersbyuserid
           method: POST
+
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline
