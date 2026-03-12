@@ -1,0 +1,24 @@
+service: digi-gold-api
+frameworkVersion: "3"
+useDotenv: true
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+  stage: dev
+
+  environment:
+    MONGO_URI: ${env:MONGO_URI}
+
+functions:
+
+  testDB:
+    handler: src/handlers/testHandler.testDB
+    events:
+      - httpApi:
+          path: /test-db
+          method: GET
+          
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
