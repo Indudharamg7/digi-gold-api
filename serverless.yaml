@@ -70,6 +70,27 @@ functions:
           path: /deleteusersbyuserid
           method: POST
 
+  getMetalPrice:
+    handler: source/handler/priceHandler.getMetalPrice
+    events:
+      - httpApi:
+          path: /getmetalprice
+          method: GET
+
+  addMetalPrice:
+    handler: source/handler/priceHandler.addMetalPrice
+    events:
+      - httpApi:
+          path: /addmetalprice
+          method: POST
+
+  calculatePrice:
+    handler: source/handler/priceHandler.calculatePrice
+    events:
+      - httpApi:
+          path: /calculateprice
+          method: POST
+
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline

@@ -38,10 +38,12 @@ async function deleteData(collectionName, filter) {
 /**
  * Get one document
  */
-async function getOne(collectionName, filter) {
+async function getOne(collectionName, filter, sort = {}) {
   const db = await connectDB();
 
-  const result = await db.collection(collectionName).findOne(filter);
+  const result = await db
+    .collection(collectionName)
+    .findOne(filter, { sort });
 
   return result;
 }
