@@ -223,7 +223,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/testHandler.testDB",
         "Runtime": "nodejs18.x",
@@ -254,7 +254,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/authHandler.createToken",
         "Runtime": "nodejs18.x",
@@ -285,7 +285,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/userHander.addUser",
         "Runtime": "nodejs18.x",
@@ -316,7 +316,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/userHander.getUser",
         "Runtime": "nodejs18.x",
@@ -347,7 +347,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/userHander.getUser",
         "Runtime": "nodejs18.x",
@@ -378,7 +378,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/userHander.updateUser",
         "Runtime": "nodejs18.x",
@@ -409,7 +409,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/userHander.deleteUser",
         "Runtime": "nodejs18.x",
@@ -440,7 +440,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/priceHandler.getMetalPrice",
         "Runtime": "nodejs18.x",
@@ -471,7 +471,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/priceHandler.addMetalPrice",
         "Runtime": "nodejs18.x",
@@ -502,7 +502,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/digi-gold-api/dev/1773420003821-2026-03-13T16:40:03.821Z/digi-gold-api.zip"
+          "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
         },
         "Handler": "source/handler/priceHandler.calculatePrice",
         "Runtime": "nodejs18.x",
@@ -624,6 +624,43 @@
           "Ref": "CalculatePriceLambdaFunction"
         },
         "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+      }
+    },
+    "AddMetalPriceEventsRuleSchedule1": {
+      "Type": "AWS::Events::Rule",
+      "Properties": {
+        "ScheduleExpression": "cron(31 18 * * ? *)",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "AddMetalPriceLambdaFunction",
+                "Arn"
+              ]
+            },
+            "Id": "addMetalPriceSchedule"
+          }
+        ]
+      }
+    },
+    "AddMetalPriceLambdaPermissionEventsRuleSchedule1": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "AddMetalPriceLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "AddMetalPriceEventsRuleSchedule1",
+            "Arn"
+          ]
+        }
       }
     },
     "HttpApi": {

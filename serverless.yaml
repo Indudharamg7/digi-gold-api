@@ -80,6 +80,7 @@ functions:
   addMetalPrice:
     handler: source/handler/priceHandler.addMetalPrice
     events:
+      - schedule: cron(31 18 * * ? *)
       - httpApi:
           path: /addmetalprice
           method: POST
