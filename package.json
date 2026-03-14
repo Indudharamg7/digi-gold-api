@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.967.0",
+    "axios": "^1.13.6",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.1.0",
     "uuid": "^8.3.2"
@@ -18,6 +19,7 @@
   "devDependencies": {
     "prettier": "^3.8.1",
     "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.57.0",
     "serverless-offline": "^12.0.4"
   }
 }

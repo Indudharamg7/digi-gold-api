@@ -248,7 +248,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/testHandler.testDB",
               "Runtime": "nodejs18.x",
@@ -279,7 +279,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/authHandler.createToken",
               "Runtime": "nodejs18.x",
@@ -310,7 +310,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.addUser",
               "Runtime": "nodejs18.x",
@@ -341,7 +341,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.getUser",
               "Runtime": "nodejs18.x",
@@ -372,7 +372,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.getUser",
               "Runtime": "nodejs18.x",
@@ -403,7 +403,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.updateUser",
               "Runtime": "nodejs18.x",
@@ -434,7 +434,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.deleteUser",
               "Runtime": "nodejs18.x",
@@ -465,7 +465,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.getMetalPrice",
               "Runtime": "nodejs18.x",
@@ -496,7 +496,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.addMetalPrice",
               "Runtime": "nodejs18.x",
@@ -527,7 +527,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.calculatePrice",
               "Runtime": "nodejs18.x",
@@ -551,104 +551,104 @@
               "CalculatePriceLogGroup"
             ]
           },
-          "TestDBLambdaVersionyyjeLiUnKHNcgYZEQxT215ziF62fDnYNS6e3q4pWNM": {
+          "TestDBLambdaVersiond8Lzm3Py1KeBjDdaLZha3mazjuwERejyqxjHUGu8w": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "TestDBLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "GenerateTokenLambdaVersionPOcROAd7KIjikyQgO7dSnLoq0Cj2se5HBBE8X9lEqY": {
+          "GenerateTokenLambdaVersionkwpGuM6Ti1ML9yFuuYgQTm4ZnsuzNaiQoSvy9VSncY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GenerateTokenLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "AddUserLambdaVersionHysE2k9mcAQqolYabOUbZdqk5a6vffkpew52hQtg": {
+          "AddUserLambdaVersionp9ekjwxvDnL4FeDlaQQFVjtzt6oLfy6ib5dLblLo9w": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AddUserLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "GetUserByUserIdLambdaVersionT9vH47Qtz1iZScrZsrNl9cMxtsagZnfqJmbQvo33M": {
+          "GetUserByUserIdLambdaVersionDvB6Dulg4Luhmm4TxAlooPG5mu1bnofKbapWdHCqIs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "GetUserByMobileNumberLambdaVersionbmXRUKmYHzaxDf0pctU0nm84ZuqlJdw68liGj04ZI": {
+          "GetUserByMobileNumberLambdaVersionhbTUxRAmjQyx70OC5wWLJJIHZXnT7rlySOZtn4fs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserByMobileNumberLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "UpdateUserByUserIdLambdaVersionRIhXEEkiUqGtN4Fn7gkLYrkwfNVIujmuK69eGHN4c": {
+          "UpdateUserByUserIdLambdaVersioncj8FG4lDInSPWis6rYdV7CNJEMmOsyK8Gl9NNYEvkQc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UpdateUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "DeleteUserByUserIdLambdaVersionZNJgJMFzWMdx7Pn5T5neCMjtXzn9RcgYCIWtR1txtg": {
+          "DeleteUserByUserIdLambdaVersionjojpmIemPXXocOXZ4nsrHEEm5GRX2xK8CLoQ5P1f3mE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "GetMetalPriceLambdaVersionh9UuU8pojIOOz0gz8FfAJKKgXtuYmZtSF6bGIolzr6Q": {
+          "GetMetalPriceLambdaVersionJvgYcG2VPWrYAYJ0ci8Xoc2JoleJN2vEa5ieMktpY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetMetalPriceLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "AddMetalPriceLambdaVersionGk1TjttqmPJZ5ua9qb7K4IPdGN8NMblaf1Q3y5Cwx8": {
+          "AddMetalPriceLambdaVersionDQYd0aCDf8vdC7mcFKnIkmJ5iynEUI8Txv1rnmWnEw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AddMetalPriceLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
-          "CalculatePriceLambdaVersionYKcUJVUwSxRX07xxvBrBi7kOa3d6v3JYoARXZ4w9s": {
+          "CalculatePriceLambdaVersionLRexl1h5TgmZkMlEXJ3pqG8bOuUAGbZhh01DpToKoM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CalculatePriceLambdaFunction"
               },
-              "CodeSha256": "5kRxMwkGyP2KsmPdWzISd/CUoPRmWvGdqt8BJs7dLNg="
+              "CodeSha256": "h2ZTj4xVpdZOzO2MCvelclpbulFCxvF78xDLlLnskrc="
             }
           },
           "AddMetalPriceEventsRuleSchedule1": {
@@ -1441,7 +1441,7 @@
           "TestDBLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "TestDBLambdaVersionyyjeLiUnKHNcgYZEQxT215ziF62fDnYNS6e3q4pWNM"
+              "Ref": "TestDBLambdaVersiond8Lzm3Py1KeBjDdaLZha3mazjuwERejyqxjHUGu8w"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-TestDBLambdaFunctionQualifiedArn"
@@ -1450,7 +1450,7 @@
           "GenerateTokenLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GenerateTokenLambdaVersionPOcROAd7KIjikyQgO7dSnLoq0Cj2se5HBBE8X9lEqY"
+              "Ref": "GenerateTokenLambdaVersionkwpGuM6Ti1ML9yFuuYgQTm4ZnsuzNaiQoSvy9VSncY"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GenerateTokenLambdaFunctionQualifiedArn"
@@ -1459,7 +1459,7 @@
           "AddUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AddUserLambdaVersionHysE2k9mcAQqolYabOUbZdqk5a6vffkpew52hQtg"
+              "Ref": "AddUserLambdaVersionp9ekjwxvDnL4FeDlaQQFVjtzt6oLfy6ib5dLblLo9w"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-AddUserLambdaFunctionQualifiedArn"
@@ -1468,7 +1468,7 @@
           "GetUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserByUserIdLambdaVersionT9vH47Qtz1iZScrZsrNl9cMxtsagZnfqJmbQvo33M"
+              "Ref": "GetUserByUserIdLambdaVersionDvB6Dulg4Luhmm4TxAlooPG5mu1bnofKbapWdHCqIs"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetUserByUserIdLambdaFunctionQualifiedArn"
@@ -1477,7 +1477,7 @@
           "GetUserByMobileNumberLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserByMobileNumberLambdaVersionbmXRUKmYHzaxDf0pctU0nm84ZuqlJdw68liGj04ZI"
+              "Ref": "GetUserByMobileNumberLambdaVersionhbTUxRAmjQyx70OC5wWLJJIHZXnT7rlySOZtn4fs"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetUserByMobileNumberLambdaFunctionQualifiedArn"
@@ -1486,7 +1486,7 @@
           "UpdateUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateUserByUserIdLambdaVersionRIhXEEkiUqGtN4Fn7gkLYrkwfNVIujmuK69eGHN4c"
+              "Ref": "UpdateUserByUserIdLambdaVersioncj8FG4lDInSPWis6rYdV7CNJEMmOsyK8Gl9NNYEvkQc"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-UpdateUserByUserIdLambdaFunctionQualifiedArn"
@@ -1495,7 +1495,7 @@
           "DeleteUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteUserByUserIdLambdaVersionZNJgJMFzWMdx7Pn5T5neCMjtXzn9RcgYCIWtR1txtg"
+              "Ref": "DeleteUserByUserIdLambdaVersionjojpmIemPXXocOXZ4nsrHEEm5GRX2xK8CLoQ5P1f3mE"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-DeleteUserByUserIdLambdaFunctionQualifiedArn"
@@ -1504,7 +1504,7 @@
           "GetMetalPriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetMetalPriceLambdaVersionh9UuU8pojIOOz0gz8FfAJKKgXtuYmZtSF6bGIolzr6Q"
+              "Ref": "GetMetalPriceLambdaVersionJvgYcG2VPWrYAYJ0ci8Xoc2JoleJN2vEa5ieMktpY"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetMetalPriceLambdaFunctionQualifiedArn"
@@ -1513,7 +1513,7 @@
           "AddMetalPriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AddMetalPriceLambdaVersionGk1TjttqmPJZ5ua9qb7K4IPdGN8NMblaf1Q3y5Cwx8"
+              "Ref": "AddMetalPriceLambdaVersionDQYd0aCDf8vdC7mcFKnIkmJ5iynEUI8Txv1rnmWnEw"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-AddMetalPriceLambdaFunctionQualifiedArn"
@@ -1522,7 +1522,7 @@
           "CalculatePriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CalculatePriceLambdaVersionYKcUJVUwSxRX07xxvBrBi7kOa3d6v3JYoARXZ4w9s"
+              "Ref": "CalculatePriceLambdaVersionLRexl1h5TgmZkMlEXJ3pqG8bOuUAGbZhh01DpToKoM"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-CalculatePriceLambdaFunctionQualifiedArn"
@@ -1648,9 +1648,20 @@
       },
       "vpc": {}
     },
+    "custom": {
+      "esbuild": {
+        "bundle": true,
+        "minify": false,
+        "sourcemap": true,
+        "exclude": [
+          "aws-sdk"
+        ]
+      }
+    },
     "plugins": [
       "serverless-dotenv-plugin",
-      "serverless-offline"
+      "serverless-offline",
+      "serverless-esbuild"
     ],
     "pluginsData": {},
     "functions": {
@@ -1672,7 +1683,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "TestDBLambdaVersionyyjeLiUnKHNcgYZEQxT215ziF62fDnYNS6e3q4pWNM"
+        "versionLogicalId": "TestDBLambdaVersiond8Lzm3Py1KeBjDdaLZha3mazjuwERejyqxjHUGu8w"
       },
       "generateToken": {
         "handler": "source/handler/authHandler.createToken",
@@ -1692,7 +1703,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GenerateTokenLambdaVersionPOcROAd7KIjikyQgO7dSnLoq0Cj2se5HBBE8X9lEqY"
+        "versionLogicalId": "GenerateTokenLambdaVersionkwpGuM6Ti1ML9yFuuYgQTm4ZnsuzNaiQoSvy9VSncY"
       },
       "addUser": {
         "handler": "source/handler/userHander.addUser",
@@ -1712,7 +1723,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "AddUserLambdaVersionHysE2k9mcAQqolYabOUbZdqk5a6vffkpew52hQtg"
+        "versionLogicalId": "AddUserLambdaVersionp9ekjwxvDnL4FeDlaQQFVjtzt6oLfy6ib5dLblLo9w"
       },
       "getUserByUserId": {
         "handler": "source/handler/userHander.getUser",
@@ -1732,7 +1743,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetUserByUserIdLambdaVersionT9vH47Qtz1iZScrZsrNl9cMxtsagZnfqJmbQvo33M"
+        "versionLogicalId": "GetUserByUserIdLambdaVersionDvB6Dulg4Luhmm4TxAlooPG5mu1bnofKbapWdHCqIs"
       },
       "getUserByMobileNumber": {
         "handler": "source/handler/userHander.getUser",
@@ -1752,7 +1763,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetUserByMobileNumberLambdaVersionbmXRUKmYHzaxDf0pctU0nm84ZuqlJdw68liGj04ZI"
+        "versionLogicalId": "GetUserByMobileNumberLambdaVersionhbTUxRAmjQyx70OC5wWLJJIHZXnT7rlySOZtn4fs"
       },
       "updateUserByUserId": {
         "handler": "source/handler/userHander.updateUser",
@@ -1772,7 +1783,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "UpdateUserByUserIdLambdaVersionRIhXEEkiUqGtN4Fn7gkLYrkwfNVIujmuK69eGHN4c"
+        "versionLogicalId": "UpdateUserByUserIdLambdaVersioncj8FG4lDInSPWis6rYdV7CNJEMmOsyK8Gl9NNYEvkQc"
       },
       "deleteUserByUserId": {
         "handler": "source/handler/userHander.deleteUser",
@@ -1792,7 +1803,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "DeleteUserByUserIdLambdaVersionZNJgJMFzWMdx7Pn5T5neCMjtXzn9RcgYCIWtR1txtg"
+        "versionLogicalId": "DeleteUserByUserIdLambdaVersionjojpmIemPXXocOXZ4nsrHEEm5GRX2xK8CLoQ5P1f3mE"
       },
       "getMetalPrice": {
         "handler": "source/handler/priceHandler.getMetalPrice",
@@ -1812,7 +1823,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetMetalPriceLambdaVersionh9UuU8pojIOOz0gz8FfAJKKgXtuYmZtSF6bGIolzr6Q"
+        "versionLogicalId": "GetMetalPriceLambdaVersionJvgYcG2VPWrYAYJ0ci8Xoc2JoleJN2vEa5ieMktpY"
       },
       "addMetalPrice": {
         "handler": "source/handler/priceHandler.addMetalPrice",
@@ -1835,7 +1846,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "AddMetalPriceLambdaVersionGk1TjttqmPJZ5ua9qb7K4IPdGN8NMblaf1Q3y5Cwx8"
+        "versionLogicalId": "AddMetalPriceLambdaVersionDQYd0aCDf8vdC7mcFKnIkmJ5iynEUI8Txv1rnmWnEw"
       },
       "calculatePrice": {
         "handler": "source/handler/priceHandler.calculatePrice",
@@ -1855,7 +1866,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "CalculatePriceLambdaVersionYKcUJVUwSxRX07xxvBrBi7kOa3d6v3JYoARXZ4w9s"
+        "versionLogicalId": "CalculatePriceLambdaVersionLRexl1h5TgmZkMlEXJ3pqG8bOuUAGbZhh01DpToKoM"
       }
     },
     "configValidationMode": "warn",
@@ -1872,14 +1883,16 @@
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "custom": {
+        "$ref": "$[\"service\"][\"custom\"]"
       }
     },
     "layers": {},
-    "isDashboardMonitoringPreconfigured": false,
-    "artifact": "/home/indudhara-m-g/Documents/digi-gold-api/.serverless/digi-gold-api.zip"
+    "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/digi-gold-api/dev/1773420988836-2026-03-13T16:56:28.836Z",
+    "artifactDirectoryName": "serverless/digi-gold-api/dev/1773488859683-2026-03-14T11:47:39.683Z",
     "artifact": "digi-gold-api.zip"
   }
 }
