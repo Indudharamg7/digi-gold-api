@@ -99,6 +99,34 @@ functions:
           path: /getmetalpricedetails
           method: GET
 
+  addTransaction:
+    handler: source/handler/transactionHandler.addTransaction
+    events:
+      - httpApi:
+          path: /addtransaction
+          method: POST
+
+  updateTransaction:
+    handler: source/handler/transactionHandler.updateTransaction
+    events:
+      - httpApi:
+          path: /updatetransaction
+          method: POST
+
+  getTransactions:
+    handler: source/handler/transactionHandler.getTransactions
+    events:
+      - httpApi:
+          path: /gettransactions
+          method: GET
+
+  deleteTransaction:
+    handler: source/handler/transactionHandler.deleteTransaction
+    events:
+      - httpApi:
+          path: /deletetransaction
+          method: POST
+
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline

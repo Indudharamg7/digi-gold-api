@@ -166,6 +166,30 @@
               "LogGroupName": "/aws/lambda/digi-gold-api-dev-getMetalPriceDetails"
             }
           },
+          "AddTransactionLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/digi-gold-api-dev-addTransaction"
+            }
+          },
+          "UpdateTransactionLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/digi-gold-api-dev-updateTransaction"
+            }
+          },
+          "GetTransactionsLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/digi-gold-api-dev-getTransactions"
+            }
+          },
+          "DeleteTransactionLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/digi-gold-api-dev-deleteTransaction"
+            }
+          },
           "IamRoleLambdaExecution": {
             "Type": "AWS::IAM::Role",
             "Properties": {
@@ -254,7 +278,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/testHandler.testDB",
               "Runtime": "nodejs18.x",
@@ -285,7 +309,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/authHandler.createToken",
               "Runtime": "nodejs18.x",
@@ -316,7 +340,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.addUser",
               "Runtime": "nodejs18.x",
@@ -347,7 +371,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.getUser",
               "Runtime": "nodejs18.x",
@@ -378,7 +402,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.getUser",
               "Runtime": "nodejs18.x",
@@ -409,7 +433,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.updateUser",
               "Runtime": "nodejs18.x",
@@ -440,7 +464,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/userHander.deleteUser",
               "Runtime": "nodejs18.x",
@@ -471,7 +495,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.getMetalPrice",
               "Runtime": "nodejs18.x",
@@ -502,7 +526,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.addMetalPrice",
               "Runtime": "nodejs18.x",
@@ -533,7 +557,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.calculatePrice",
               "Runtime": "nodejs18.x",
@@ -564,7 +588,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z/digi-gold-api.zip"
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
               },
               "Handler": "source/handler/priceHandler.getMetalPriceDetails",
               "Runtime": "nodejs18.x",
@@ -588,114 +612,278 @@
               "GetMetalPriceDetailsLogGroup"
             ]
           },
-          "TestDBLambdaVersion0JU0iN6wT9HMSQqnrGrGRj3YLEO98KaXCJaneBHo8YA": {
+          "AddTransactionLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": {
+                  "Ref": "ServerlessDeploymentBucket"
+                },
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
+              },
+              "Handler": "source/handler/transactionHandler.addTransaction",
+              "Runtime": "nodejs18.x",
+              "FunctionName": "digi-gold-api-dev-addTransaction",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "MONGO_URI": "mongodb+srv://serverless_user:@test-db.rpn1dgh.mongodb.net/digi_gold",
+                  "SECRET_NAME": "digi_gold_secret_keys"
+                }
+              },
+              "Role": {
+                "Fn::GetAtt": [
+                  "IamRoleLambdaExecution",
+                  "Arn"
+                ]
+              }
+            },
+            "DependsOn": [
+              "AddTransactionLogGroup"
+            ]
+          },
+          "UpdateTransactionLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": {
+                  "Ref": "ServerlessDeploymentBucket"
+                },
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
+              },
+              "Handler": "source/handler/transactionHandler.updateTransaction",
+              "Runtime": "nodejs18.x",
+              "FunctionName": "digi-gold-api-dev-updateTransaction",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "MONGO_URI": "mongodb+srv://serverless_user:@test-db.rpn1dgh.mongodb.net/digi_gold",
+                  "SECRET_NAME": "digi_gold_secret_keys"
+                }
+              },
+              "Role": {
+                "Fn::GetAtt": [
+                  "IamRoleLambdaExecution",
+                  "Arn"
+                ]
+              }
+            },
+            "DependsOn": [
+              "UpdateTransactionLogGroup"
+            ]
+          },
+          "GetTransactionsLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": {
+                  "Ref": "ServerlessDeploymentBucket"
+                },
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
+              },
+              "Handler": "source/handler/transactionHandler.getTransactions",
+              "Runtime": "nodejs18.x",
+              "FunctionName": "digi-gold-api-dev-getTransactions",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "MONGO_URI": "mongodb+srv://serverless_user:@test-db.rpn1dgh.mongodb.net/digi_gold",
+                  "SECRET_NAME": "digi_gold_secret_keys"
+                }
+              },
+              "Role": {
+                "Fn::GetAtt": [
+                  "IamRoleLambdaExecution",
+                  "Arn"
+                ]
+              }
+            },
+            "DependsOn": [
+              "GetTransactionsLogGroup"
+            ]
+          },
+          "DeleteTransactionLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": {
+                  "Ref": "ServerlessDeploymentBucket"
+                },
+                "S3Key": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z/digi-gold-api.zip"
+              },
+              "Handler": "source/handler/transactionHandler.deleteTransaction",
+              "Runtime": "nodejs18.x",
+              "FunctionName": "digi-gold-api-dev-deleteTransaction",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "MONGO_URI": "mongodb+srv://serverless_user:@test-db.rpn1dgh.mongodb.net/digi_gold",
+                  "SECRET_NAME": "digi_gold_secret_keys"
+                }
+              },
+              "Role": {
+                "Fn::GetAtt": [
+                  "IamRoleLambdaExecution",
+                  "Arn"
+                ]
+              }
+            },
+            "DependsOn": [
+              "DeleteTransactionLogGroup"
+            ]
+          },
+          "TestDBLambdaVersionJBSBiCHL8qhAaIRywmo7UluNZ8xSgW7bGUzOr9XpY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "TestDBLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "GenerateTokenLambdaVersionpLh2kIG0G1uwBRBJ6YoDpPAbBe8mPNQ6W35hGuLW1Ro": {
+          "GenerateTokenLambdaVersionAKJX3FCL1ebJt3Ztst4WirGZ0U421MJJYVVnZyHE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GenerateTokenLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "AddUserLambdaVersionAOPFZZjI1QPHfUIRqI9HHoOSPxPF8X8nAePfVEIuSk": {
+          "AddUserLambdaVersionsJzcew05DEjda9Ia8S5gjpZf1Jc6sFt1M3xStjrtB4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AddUserLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "GetUserByUserIdLambdaVersionXqf5qalFN1Rf8gLfhzmIivE6YK9rsrkTbSJ8KkcE": {
+          "GetUserByUserIdLambdaVersion9fhv8bVqjt37Zxj0gSC0YLMHbiAEiKeuKzVIJl5MQog": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "GetUserByMobileNumberLambdaVersionPT6xXWjxvtGVD2RALnHzoGvSJlsIAih5EZKUP3O31QE": {
+          "GetUserByMobileNumberLambdaVersion58cXjPXevbv2f2hx0IXUp79L3Nz8ocvAx6gkwBhEpI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserByMobileNumberLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "UpdateUserByUserIdLambdaVersion3kACzZUWbCz5t51ioN3tezyaVOy2ucCTb3rdmsWrwh8": {
+          "UpdateUserByUserIdLambdaVersionDSIOfqNjsbbRBS6iIm5PzWHbNBZPgGguPev7CKoZQ0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UpdateUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "DeleteUserByUserIdLambdaVersionXsbaK5ZFXukIm2rNDLBof5TtDvF5r5fpzf8sApJ1OI0": {
+          "DeleteUserByUserIdLambdaVersionBhNaYhZoJtn52CmcMbWsbPKhqKQYFZLnZBCCGiTTma4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteUserByUserIdLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "GetMetalPriceLambdaVersion4NVUKbwQ1XvO46AjhGy0BYjXed9DrAmJCVAnOw10": {
+          "GetMetalPriceLambdaVersionGiDdafNS9K2pdMq4X0enCO43qFJlZb39HjplbrUdU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetMetalPriceLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "AddMetalPriceLambdaVersionMrIQvs75iJYH29nRqShoi5wJIiddS7KR9HrWHs8u3A": {
+          "AddMetalPriceLambdaVersionMW7uZah4wt7rXxXNJE8dM9gjgrCWcVgRylHiS4ksEhw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AddMetalPriceLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "CalculatePriceLambdaVersion8r9NzHynSVThHj8FMLaEmAGMmxfuozJkqZAN70Gpk": {
+          "CalculatePriceLambdaVersionnS1OXmwfEfGx8eijy98bxJ8yiFPfjf8XleEARNv5yw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CalculatePriceLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
-          "GetMetalPriceDetailsLambdaVersionMm5pF70XZ6MmA5InowCDzBEFVRhTYSpWEHAHM5kFo": {
+          "GetMetalPriceDetailsLambdaVersionObo6HL5vMmr3I5B2b0yCjUmDZxNz29Ua5yJiD4GxGI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetMetalPriceDetailsLambdaFunction"
               },
-              "CodeSha256": "/0clwUORFlE3T1OFAe0hkSIP1Mqh7o+YXAyOlmMk3ns="
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
+            }
+          },
+          "AddTransactionLambdaVersionLR1PeuobiX0wD8cPrWLXyp4VuvVfzzVVt0aDciR4": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "AddTransactionLambdaFunction"
+              },
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
+            }
+          },
+          "UpdateTransactionLambdaVersionL8oe5tkWh74fV0LcWjjs1nbHHvIqDSi8rvR9w884": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "UpdateTransactionLambdaFunction"
+              },
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
+            }
+          },
+          "GetTransactionsLambdaVersiongl9JTpEDxVuFDvw1tjlrxLM7DB0WD72iXsnDquNqFk": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetTransactionsLambdaFunction"
+              },
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
+            }
+          },
+          "DeleteTransactionLambdaVersionEa6AiPOGwRZbfx9XRfhWOOzk3ktpqEDXVj1T4E3Qk": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "DeleteTransactionLambdaFunction"
+              },
+              "CodeSha256": "nl4T27ipXxeV284VMjU9ICM+dQEuqYDjWGO82xkcZCk="
             }
           },
           "AddMetalPriceEventsRuleSchedule1": {
@@ -1546,6 +1734,294 @@
               }
             },
             "DependsOn": "HttpApiIntegrationGetMetalPriceDetails"
+          },
+          "AddTransactionLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "AddTransactionLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationAddTransaction": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"AddTransactionLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePostAddtransaction": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "POST /addtransaction",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationAddTransaction"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationAddTransaction"
+          },
+          "UpdateTransactionLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "UpdateTransactionLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationUpdateTransaction": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"UpdateTransactionLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePostUpdatetransaction": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "POST /updatetransaction",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationUpdateTransaction"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationUpdateTransaction"
+          },
+          "GetTransactionsLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetTransactionsLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetTransactions": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetTransactionsLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetGettransactions": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /gettransactions",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetTransactions"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetTransactions"
+          },
+          "DeleteTransactionLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "DeleteTransactionLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationDeleteTransaction": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"DeleteTransactionLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePostDeletetransaction": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "POST /deletetransaction",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationDeleteTransaction"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationDeleteTransaction"
           }
         },
         "Outputs": {
@@ -1560,7 +2036,7 @@
           "TestDBLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "TestDBLambdaVersion0JU0iN6wT9HMSQqnrGrGRj3YLEO98KaXCJaneBHo8YA"
+              "Ref": "TestDBLambdaVersionJBSBiCHL8qhAaIRywmo7UluNZ8xSgW7bGUzOr9XpY"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-TestDBLambdaFunctionQualifiedArn"
@@ -1569,7 +2045,7 @@
           "GenerateTokenLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GenerateTokenLambdaVersionpLh2kIG0G1uwBRBJ6YoDpPAbBe8mPNQ6W35hGuLW1Ro"
+              "Ref": "GenerateTokenLambdaVersionAKJX3FCL1ebJt3Ztst4WirGZ0U421MJJYVVnZyHE"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GenerateTokenLambdaFunctionQualifiedArn"
@@ -1578,7 +2054,7 @@
           "AddUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AddUserLambdaVersionAOPFZZjI1QPHfUIRqI9HHoOSPxPF8X8nAePfVEIuSk"
+              "Ref": "AddUserLambdaVersionsJzcew05DEjda9Ia8S5gjpZf1Jc6sFt1M3xStjrtB4"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-AddUserLambdaFunctionQualifiedArn"
@@ -1587,7 +2063,7 @@
           "GetUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserByUserIdLambdaVersionXqf5qalFN1Rf8gLfhzmIivE6YK9rsrkTbSJ8KkcE"
+              "Ref": "GetUserByUserIdLambdaVersion9fhv8bVqjt37Zxj0gSC0YLMHbiAEiKeuKzVIJl5MQog"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetUserByUserIdLambdaFunctionQualifiedArn"
@@ -1596,7 +2072,7 @@
           "GetUserByMobileNumberLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserByMobileNumberLambdaVersionPT6xXWjxvtGVD2RALnHzoGvSJlsIAih5EZKUP3O31QE"
+              "Ref": "GetUserByMobileNumberLambdaVersion58cXjPXevbv2f2hx0IXUp79L3Nz8ocvAx6gkwBhEpI"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetUserByMobileNumberLambdaFunctionQualifiedArn"
@@ -1605,7 +2081,7 @@
           "UpdateUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateUserByUserIdLambdaVersion3kACzZUWbCz5t51ioN3tezyaVOy2ucCTb3rdmsWrwh8"
+              "Ref": "UpdateUserByUserIdLambdaVersionDSIOfqNjsbbRBS6iIm5PzWHbNBZPgGguPev7CKoZQ0"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-UpdateUserByUserIdLambdaFunctionQualifiedArn"
@@ -1614,7 +2090,7 @@
           "DeleteUserByUserIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteUserByUserIdLambdaVersionXsbaK5ZFXukIm2rNDLBof5TtDvF5r5fpzf8sApJ1OI0"
+              "Ref": "DeleteUserByUserIdLambdaVersionBhNaYhZoJtn52CmcMbWsbPKhqKQYFZLnZBCCGiTTma4"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-DeleteUserByUserIdLambdaFunctionQualifiedArn"
@@ -1623,7 +2099,7 @@
           "GetMetalPriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetMetalPriceLambdaVersion4NVUKbwQ1XvO46AjhGy0BYjXed9DrAmJCVAnOw10"
+              "Ref": "GetMetalPriceLambdaVersionGiDdafNS9K2pdMq4X0enCO43qFJlZb39HjplbrUdU"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetMetalPriceLambdaFunctionQualifiedArn"
@@ -1632,7 +2108,7 @@
           "AddMetalPriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AddMetalPriceLambdaVersionMrIQvs75iJYH29nRqShoi5wJIiddS7KR9HrWHs8u3A"
+              "Ref": "AddMetalPriceLambdaVersionMW7uZah4wt7rXxXNJE8dM9gjgrCWcVgRylHiS4ksEhw"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-AddMetalPriceLambdaFunctionQualifiedArn"
@@ -1641,7 +2117,7 @@
           "CalculatePriceLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CalculatePriceLambdaVersion8r9NzHynSVThHj8FMLaEmAGMmxfuozJkqZAN70Gpk"
+              "Ref": "CalculatePriceLambdaVersionnS1OXmwfEfGx8eijy98bxJ8yiFPfjf8XleEARNv5yw"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-CalculatePriceLambdaFunctionQualifiedArn"
@@ -1650,10 +2126,46 @@
           "GetMetalPriceDetailsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetMetalPriceDetailsLambdaVersionMm5pF70XZ6MmA5InowCDzBEFVRhTYSpWEHAHM5kFo"
+              "Ref": "GetMetalPriceDetailsLambdaVersionObo6HL5vMmr3I5B2b0yCjUmDZxNz29Ua5yJiD4GxGI"
             },
             "Export": {
               "Name": "sls-digi-gold-api-dev-GetMetalPriceDetailsLambdaFunctionQualifiedArn"
+            }
+          },
+          "AddTransactionLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "AddTransactionLambdaVersionLR1PeuobiX0wD8cPrWLXyp4VuvVfzzVVt0aDciR4"
+            },
+            "Export": {
+              "Name": "sls-digi-gold-api-dev-AddTransactionLambdaFunctionQualifiedArn"
+            }
+          },
+          "UpdateTransactionLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "UpdateTransactionLambdaVersionL8oe5tkWh74fV0LcWjjs1nbHHvIqDSi8rvR9w884"
+            },
+            "Export": {
+              "Name": "sls-digi-gold-api-dev-UpdateTransactionLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetTransactionsLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetTransactionsLambdaVersiongl9JTpEDxVuFDvw1tjlrxLM7DB0WD72iXsnDquNqFk"
+            },
+            "Export": {
+              "Name": "sls-digi-gold-api-dev-GetTransactionsLambdaFunctionQualifiedArn"
+            }
+          },
+          "DeleteTransactionLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "DeleteTransactionLambdaVersionEa6AiPOGwRZbfx9XRfhWOOzk3ktpqEDXVj1T4E3Qk"
+            },
+            "Export": {
+              "Name": "sls-digi-gold-api-dev-DeleteTransactionLambdaFunctionQualifiedArn"
             }
           },
           "HttpApiId": {
@@ -1811,7 +2323,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "TestDBLambdaVersion0JU0iN6wT9HMSQqnrGrGRj3YLEO98KaXCJaneBHo8YA"
+        "versionLogicalId": "TestDBLambdaVersionJBSBiCHL8qhAaIRywmo7UluNZ8xSgW7bGUzOr9XpY"
       },
       "generateToken": {
         "handler": "source/handler/authHandler.createToken",
@@ -1831,7 +2343,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GenerateTokenLambdaVersionpLh2kIG0G1uwBRBJ6YoDpPAbBe8mPNQ6W35hGuLW1Ro"
+        "versionLogicalId": "GenerateTokenLambdaVersionAKJX3FCL1ebJt3Ztst4WirGZ0U421MJJYVVnZyHE"
       },
       "addUser": {
         "handler": "source/handler/userHander.addUser",
@@ -1851,7 +2363,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "AddUserLambdaVersionAOPFZZjI1QPHfUIRqI9HHoOSPxPF8X8nAePfVEIuSk"
+        "versionLogicalId": "AddUserLambdaVersionsJzcew05DEjda9Ia8S5gjpZf1Jc6sFt1M3xStjrtB4"
       },
       "getUserByUserId": {
         "handler": "source/handler/userHander.getUser",
@@ -1871,7 +2383,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetUserByUserIdLambdaVersionXqf5qalFN1Rf8gLfhzmIivE6YK9rsrkTbSJ8KkcE"
+        "versionLogicalId": "GetUserByUserIdLambdaVersion9fhv8bVqjt37Zxj0gSC0YLMHbiAEiKeuKzVIJl5MQog"
       },
       "getUserByMobileNumber": {
         "handler": "source/handler/userHander.getUser",
@@ -1891,7 +2403,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetUserByMobileNumberLambdaVersionPT6xXWjxvtGVD2RALnHzoGvSJlsIAih5EZKUP3O31QE"
+        "versionLogicalId": "GetUserByMobileNumberLambdaVersion58cXjPXevbv2f2hx0IXUp79L3Nz8ocvAx6gkwBhEpI"
       },
       "updateUserByUserId": {
         "handler": "source/handler/userHander.updateUser",
@@ -1911,7 +2423,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "UpdateUserByUserIdLambdaVersion3kACzZUWbCz5t51ioN3tezyaVOy2ucCTb3rdmsWrwh8"
+        "versionLogicalId": "UpdateUserByUserIdLambdaVersionDSIOfqNjsbbRBS6iIm5PzWHbNBZPgGguPev7CKoZQ0"
       },
       "deleteUserByUserId": {
         "handler": "source/handler/userHander.deleteUser",
@@ -1931,7 +2443,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "DeleteUserByUserIdLambdaVersionXsbaK5ZFXukIm2rNDLBof5TtDvF5r5fpzf8sApJ1OI0"
+        "versionLogicalId": "DeleteUserByUserIdLambdaVersionBhNaYhZoJtn52CmcMbWsbPKhqKQYFZLnZBCCGiTTma4"
       },
       "getMetalPrice": {
         "handler": "source/handler/priceHandler.getMetalPrice",
@@ -1951,7 +2463,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetMetalPriceLambdaVersion4NVUKbwQ1XvO46AjhGy0BYjXed9DrAmJCVAnOw10"
+        "versionLogicalId": "GetMetalPriceLambdaVersionGiDdafNS9K2pdMq4X0enCO43qFJlZb39HjplbrUdU"
       },
       "addMetalPrice": {
         "handler": "source/handler/priceHandler.addMetalPrice",
@@ -1974,7 +2486,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "AddMetalPriceLambdaVersionMrIQvs75iJYH29nRqShoi5wJIiddS7KR9HrWHs8u3A"
+        "versionLogicalId": "AddMetalPriceLambdaVersionMW7uZah4wt7rXxXNJE8dM9gjgrCWcVgRylHiS4ksEhw"
       },
       "calculatePrice": {
         "handler": "source/handler/priceHandler.calculatePrice",
@@ -1994,7 +2506,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "CalculatePriceLambdaVersion8r9NzHynSVThHj8FMLaEmAGMmxfuozJkqZAN70Gpk"
+        "versionLogicalId": "CalculatePriceLambdaVersionnS1OXmwfEfGx8eijy98bxJ8yiFPfjf8XleEARNv5yw"
       },
       "getMetalPriceDetails": {
         "handler": "source/handler/priceHandler.getMetalPriceDetails",
@@ -2014,7 +2526,87 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GetMetalPriceDetailsLambdaVersionMm5pF70XZ6MmA5InowCDzBEFVRhTYSpWEHAHM5kFo"
+        "versionLogicalId": "GetMetalPriceDetailsLambdaVersionObo6HL5vMmr3I5B2b0yCjUmDZxNz29Ua5yJiD4GxGI"
+      },
+      "addTransaction": {
+        "handler": "source/handler/transactionHandler.addTransaction",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/addtransaction",
+              "method": "POST"
+            },
+            "resolvedMethod": "POST",
+            "resolvedPath": "/addtransaction"
+          }
+        ],
+        "name": "digi-gold-api-dev-addTransaction",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs18.x",
+        "vpc": {},
+        "versionLogicalId": "AddTransactionLambdaVersionLR1PeuobiX0wD8cPrWLXyp4VuvVfzzVVt0aDciR4"
+      },
+      "updateTransaction": {
+        "handler": "source/handler/transactionHandler.updateTransaction",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/updatetransaction",
+              "method": "POST"
+            },
+            "resolvedMethod": "POST",
+            "resolvedPath": "/updatetransaction"
+          }
+        ],
+        "name": "digi-gold-api-dev-updateTransaction",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs18.x",
+        "vpc": {},
+        "versionLogicalId": "UpdateTransactionLambdaVersionL8oe5tkWh74fV0LcWjjs1nbHHvIqDSi8rvR9w884"
+      },
+      "getTransactions": {
+        "handler": "source/handler/transactionHandler.getTransactions",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/gettransactions",
+              "method": "GET"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/gettransactions"
+          }
+        ],
+        "name": "digi-gold-api-dev-getTransactions",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs18.x",
+        "vpc": {},
+        "versionLogicalId": "GetTransactionsLambdaVersiongl9JTpEDxVuFDvw1tjlrxLM7DB0WD72iXsnDquNqFk"
+      },
+      "deleteTransaction": {
+        "handler": "source/handler/transactionHandler.deleteTransaction",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/deletetransaction",
+              "method": "POST"
+            },
+            "resolvedMethod": "POST",
+            "resolvedPath": "/deletetransaction"
+          }
+        ],
+        "name": "digi-gold-api-dev-deleteTransaction",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs18.x",
+        "vpc": {},
+        "versionLogicalId": "DeleteTransactionLambdaVersionEa6AiPOGwRZbfx9XRfhWOOzk3ktpqEDXVj1T4E3Qk"
       }
     },
     "configValidationMode": "warn",
@@ -2046,7 +2638,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/digi-gold-api/dev/1773501104116-2026-03-14T15:11:44.116Z",
+    "artifactDirectoryName": "serverless/digi-gold-api/dev/1773509523702-2026-03-14T17:32:03.702Z",
     "artifact": "digi-gold-api.zip"
   }
 }

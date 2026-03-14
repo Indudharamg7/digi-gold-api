@@ -1,16 +1,11 @@
 const { getOne } = require("./dbquires");
 
-async function calculatePrice(metal, weightingrms, amt) {
+async function calculatePrice(orderType, metal, weightingrms, amt) {
   const startOfDay = new Date();
   startOfDay.setHours(0, 0, 0, 0);
 
   const endOfDay = new Date();
   endOfDay.setHours(23, 59, 59, 999);
-
-  console.log(`calculatePrice called with metal: ${metal}, weightingrms: ${weightingrms}, amt: ${amt}`);
-  console.log(
-    `Searching for price data for metal: ${metal} between ${startOfDay} and ${endOfDay}`,
-  );
 
   let priceData = await getOne(
     "metal_price_details",
@@ -43,19 +38,44 @@ async function calculatePrice(metal, weightingrms, amt) {
     pricePerGram = priceData.metal_type_2_price;
   }
 
+  const CGST_PERCENT = 1.5;
+  const IGST_PERCENT = 1.5;
+
   if (weightingrms) {
+    const baseAmount = pricePerGram * weightingrms;
+
+    const cgst = (baseAmount * CGST_PERCENT) / 100;
+    const igst = (baseAmount * IGST_PERCENT) / 100;
+
+    const totalAmount = baseAmount + cgst + igst;
+
     return {
+      order_type: orderType,
       metal,
       grams: weightingrms,
-      amount: Math.round(pricePerGram * weightingrms),
+      price_per_gram: pricePerGram,
+      base_amount: Math.round(baseAmount),
+      cgst: Math.round(cgst),
+      igst: Math.round(igst),
+      total_amount: Math.round(totalAmount),
     };
   }
 
   if (amt) {
+    const cgst = (amt * CGST_PERCENT) / 100;
+    const igst = (amt * IGST_PERCENT) / 100;
+
+    const totalAmount = amt + cgst + igst;
+
     return {
+      order_type: orderType,
       metal,
       amount: amt,
       grams: (amt / pricePerGram).toFixed(4),
+      price_per_gram: pricePerGram,
+      cgst: Math.round(cgst),
+      igst: Math.round(igst),
+      total_amount: Math.round(totalAmount),
     };
   }
 
