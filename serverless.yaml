@@ -92,6 +92,13 @@ functions:
           path: /calculateprice
           method: POST
 
+  getMetalPriceDetails:
+    handler: source/handler/priceHandler.getMetalPriceDetails
+    events:
+      - httpApi:
+          path: /getmetalpricedetails
+          method: GET
+
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline
@@ -104,3 +111,7 @@ custom:
     sourcemap: true
     exclude:
       - aws-sdk
+
+package:
+  patterns:
+    - source/cryptography/**

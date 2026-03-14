@@ -6,6 +6,7 @@ const {
   getOne,
   updateData,
   deleteData,
+  getMany,
 } = require("../utils/dbquires");
 const generateUUID = require("../utils/uuid");
 const buildMetal = require("../utils/metalpricedetails");
@@ -105,6 +106,14 @@ module.exports.addMetalPrice = async (event) => {
 
 module.exports.calculatePrice = async (event) => {
   try {
+    const tokenError = validateToken(event);
+    if (tokenError) {
+      console.log(
+        "digi-gold-api [getMetalPriceDetails] Token validation failed",
+      );
+      return errorResponse("Token is missing / Invalid token", null, 401);
+    }
+
     const body =
       typeof event.body === "string" ? JSON.parse(event.body) : event.body;
 
@@ -127,5 +136,69 @@ module.exports.calculatePrice = async (event) => {
     return successResponse(result, "Price calculated successfully");
   } catch (error) {
     return errorResponse("calculatePrice failed", error.message);
+  }
+};
+
+module.exports.getMetalPriceDetails = async (event) => {
+  try {
+    const tokenError = validateToken(event);
+    if (tokenError) {
+      console.log(
+        "digi-gold-api [getMetalPriceDetails] Token validation failed",
+      );
+      return errorResponse("Token is missing / Invalid token", null, 401);
+    }
+
+    const params = event.queryStringParameters || {};
+
+    console.log(
+      `digi-gold-api [getMetalPriceDetails] Input query parameters: ${JSON.stringify(
+        params,
+      )}`,
+    );
+
+    let filter = {};
+
+    if (params.fromDate || params.toDate) {
+      filter.time = {};
+
+      if (params.fromDate) {
+        const fromDate = new Date(params.fromDate);
+        fromDate.setHours(0, 0, 0, 0);
+        filter.time.$gte = fromDate.getTime();
+      }
+
+      if (params.toDate) {
+        const toDate = new Date(params.toDate);
+        toDate.setHours(23, 59, 59, 999);
+        filter.time.$lte = toDate.getTime();
+      }
+    }
+
+    console.log(
+      `digi-gold-api [getMetalPriceDetails] MongoDB filter: ${JSON.stringify(
+        filter,
+      )}`,
+    );
+
+    const priceDetails = await getMany("metal_price_details", filter);
+
+    console.log(
+      `digi-gold-api [getMetalPriceDetails] Fetched price details count: ${
+        priceDetails ? priceDetails.length : 0
+      }`,
+    );
+
+    if (!priceDetails || priceDetails.length === 0) {
+      return errorResponse("No price details found", null, 404);
+    }
+
+    return successResponse(
+      priceDetails,
+      "Metal price details fetched successfully",
+    );
+  } catch (error) {
+    console.error("digi-gold-api [getMetalPriceDetails] Error:", error.message);
+    return errorResponse("getMetalPriceDetails failed", error.message);
   }
 };
